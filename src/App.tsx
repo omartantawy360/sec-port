@@ -12,7 +12,7 @@ export default function App() {
       <AppProvider>
         <TeamProvider>
           <ThemeProvider defaultTheme="dark" storageKey="techcompete-theme">
-            <BrowserRouter>
+            <BrowserRouter basename={import.meta.env.BASE_URL}>
               <AppRoutes />
               <Toaster />
             </BrowserRouter>
